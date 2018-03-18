@@ -23,7 +23,7 @@ describe "string reverse" do
 
   # check for edge cases
   describe "edge cases" do
-    # if it's a string parameter, check for empty
+  # if it's a string parameter, check for empty
     it "reverse an empty string" do
       test_string = ""
 
