@@ -1,12 +1,21 @@
 # A method to reverse a string in place.
 def string_reverse(my_string)
-  index = 0
-  while index <= (my_string.length - index)
-    first = my_string[index]
+  if my_string == nil || my_string.length <= 1 
+    return my_string
+  else
+    string = my_string
+    index_f = 0
+    index_l = (string.length - 1)
 
-    my_string[index] = my_string[(my_string.length -index)]
+    while index_f - index_l <= 0
+      first = string[index_f].dup
+      last = string[index_l].dup
+      string[index_f] = last
+      string[index_l] = first
 
-    my_string[index] = first
+      index_f += 1
+      index_l -= 1
+    end
+    return string
   end
-  return my_string
 end
