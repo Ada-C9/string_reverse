@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
 require_relative '../lib/string_reverse'
+require 'pry'
 
 describe "string reverse" do
   describe "basic tests" do
@@ -14,7 +15,6 @@ describe "string reverse" do
 
     it "reverse a string with even number of characters" do
       test_string = "Software"
-
       string_reverse(test_string)
 
       test_string.must_equal "erawtfoS"
