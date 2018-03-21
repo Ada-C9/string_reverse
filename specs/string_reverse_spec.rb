@@ -1,6 +1,13 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'minitest/skip_dsl'
+require 'minitest/autorun'
+require 'pry'
+
 require_relative '../lib/string_reverse'
+
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
+
 
 describe "string reverse" do
   describe "basic tests" do
