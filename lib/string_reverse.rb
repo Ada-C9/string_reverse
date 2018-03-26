@@ -1,7 +1,10 @@
 # A method to reverse a string in place.
 def string_reverse(my_string)
-  if my_string == ""
+  if my_string == "" && my_string.length <= 1
     return my_string
+  elsif my_string == nil
+    return my_string
+
   end
 
   a = 0
