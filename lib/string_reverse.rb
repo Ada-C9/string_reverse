@@ -1,4 +1,19 @@
 # A method to reverse a string in place.
 def string_reverse(my_string)
-  my_string << "not implemented"
+  if my_string == ""
+    return my_string
+  end
+
+  a = 0
+  b = my_string.length - 1
+  while a < b
+    c = my_string[a]
+    my_string[a] = my_string[b]
+    my_string[b] = c
+
+    a += 1
+    b -= 1
+  end
+
+  # my_string << "not implemented"
 end
