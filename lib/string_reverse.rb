@@ -13,5 +13,3 @@ def string_reverse(my_string)
   end
   return my_string
 end
-
-puts string_reverse("Lovelace")
